@@ -29,6 +29,10 @@ resource "aws_security_group" "securitygroup" {
   }
 }
 
+//resource "aws_key_pair" "keypair" {
+//  public_key = file()
+//}
+
 resource "aws_instance" "servidor" {
   ami           = "ami-09e6f87a47903347c"
   instance_type = "t2.nano"
